@@ -70,7 +70,7 @@ public class PurchaseSubMenu implements ServicesInterface {
 				break;
 
 			case "EXIT":
-				LOGGER.info("Exiting Item menu...");
+				LOGGER.info("Exiting Purchase menu...");
 				cont = false;
 				break;
 
