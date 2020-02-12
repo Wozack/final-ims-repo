@@ -34,7 +34,8 @@ public class ProjectItemDao implements ProjectDao<ProjectItem> {
 					"INSERT INTO item (item_name, item_price) VALUES ('" + itemName + "', '" + itemPrice + "');");
 			LOGGER.info("Item created...");
 		} catch (SQLException e) {
-			e.printStackTrace();
+			LOGGER.debug(e.getStackTrace());
+			LOGGER.error(e.getMessage());
 		}
 	}
 
@@ -51,7 +52,8 @@ public class ProjectItemDao implements ProjectDao<ProjectItem> {
 				items.add(new ProjectItem(id, name, price));
 			}
 		} catch (Exception e) {
-			e.printStackTrace();
+			LOGGER.debug(e.getStackTrace());
+			LOGGER.error(e.getMessage());
 		}
 		return items;
 	}
@@ -67,7 +69,8 @@ public class ProjectItemDao implements ProjectDao<ProjectItem> {
 			statement.executeUpdate("UPDATE item SET item_price = ('" + newPrice + "') WHERE id = ('" + itemId + "');");
 			LOGGER.info("Item updated...");
 		} catch (SQLException e) {
-			e.printStackTrace();
+			LOGGER.debug(e.getStackTrace());
+			LOGGER.error(e.getMessage());
 		}
 	}
 
@@ -80,7 +83,8 @@ public class ProjectItemDao implements ProjectDao<ProjectItem> {
 			statement.executeUpdate("DELETE FROM item WHERE id = (" + ID + ");");
 			LOGGER.info("Item deleted...");
 		} catch (SQLException e) {
-			e.printStackTrace();
+			LOGGER.debug(e.getStackTrace());
+			LOGGER.error(e.getMessage());
 
 		}
 	}

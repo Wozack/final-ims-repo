@@ -29,7 +29,8 @@ public class ProjectCustomerDao implements ProjectDao<ProjectCustomer> {
 			statement.executeUpdate("INSERT INTO customer(customer_name) VALUES ('" + name + "');");
 			LOGGER.info("Customer created...");
 		} catch (SQLException e) {
-			e.printStackTrace();
+			LOGGER.debug(e.getStackTrace());
+			LOGGER.error(e.getMessage());
 		}
 	}
 
@@ -46,7 +47,8 @@ public class ProjectCustomerDao implements ProjectDao<ProjectCustomer> {
 				customers.add(new ProjectCustomer(id, name));
 			}
 		} catch (Exception e) {
-			e.printStackTrace();
+			LOGGER.debug(e.getStackTrace());
+			LOGGER.error(e.getMessage());
 		}
 		return customers;
 	}
@@ -63,7 +65,8 @@ public class ProjectCustomerDao implements ProjectDao<ProjectCustomer> {
 					+ oldName + ";");
 			LOGGER.info("Customer updated...");
 		} catch (SQLException e) {
-			e.printStackTrace();
+			LOGGER.debug(e.getStackTrace());
+			LOGGER.error(e.getMessage());
 		}
 	}
 
@@ -76,7 +79,8 @@ public class ProjectCustomerDao implements ProjectDao<ProjectCustomer> {
 			statement.executeUpdate("DELETE FROM customer WHERE id = (" + ID + ");");
 			LOGGER.info("Customer deleted...");
 		} catch (SQLException e) {
-			e.printStackTrace();
+			LOGGER.debug(e.getStackTrace());
+			LOGGER.error(e.getMessage());
 		}
 	}
 }

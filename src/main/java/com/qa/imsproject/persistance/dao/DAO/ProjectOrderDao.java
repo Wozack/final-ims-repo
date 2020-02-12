@@ -32,7 +32,8 @@ public class ProjectOrderDao implements ProjectDao<ProjectOrder> {
 			statement.executeUpdate("INSERT INTO purchase(customer_id) VALUES ('" + customerId + "');");
 			LOGGER.info("Purchase ID created...");
 		} catch (SQLException e) {
-			e.printStackTrace();
+			LOGGER.debug(e.getStackTrace());
+			LOGGER.error(e.getMessage());
 		}
 	}
 
@@ -51,7 +52,8 @@ public class ProjectOrderDao implements ProjectDao<ProjectOrder> {
 				PurchaseId.add(new ProjectOrder(purchaseId, customerId));
 			}
 		} catch (Exception e) {
-			e.printStackTrace();
+			LOGGER.debug(e.getStackTrace());
+			LOGGER.error(e.getMessage());
 		}
 
 		return PurchaseId;
@@ -82,7 +84,8 @@ public class ProjectOrderDao implements ProjectDao<ProjectOrder> {
 			}
 			LOGGER.info("Order updated...");
 		} catch (SQLException e) {
-			e.printStackTrace();
+			LOGGER.debug(e.getStackTrace());
+			LOGGER.error(e.getMessage());
 		}
 
 	}
@@ -97,8 +100,8 @@ public class ProjectOrderDao implements ProjectDao<ProjectOrder> {
 			statement.executeUpdate("DELETE FROM items_to_order WHERE purchase_id = (" + ID + ");");
 		LOGGER.info("Order deleted...");
 		} catch (SQLException e) {
-			e.printStackTrace();
-
+			LOGGER.debug(e.getStackTrace());
+			LOGGER.error(e.getMessage());
 		}
 	}
 
@@ -117,7 +120,8 @@ public class ProjectOrderDao implements ProjectDao<ProjectOrder> {
 					+ "', '" + itemCount + "', '" + purchaseId + "');");
 		LOGGER.info("Order Created...");
 		} catch (SQLException e) {
-			e.printStackTrace();
+			LOGGER.debug(e.getStackTrace());
+			LOGGER.error(e.getMessage());
 		}
 	}
 
@@ -139,7 +143,8 @@ public class ProjectOrderDao implements ProjectDao<ProjectOrder> {
 					PurchaseList.add(new ProjectOrder(PurchaseId, Item, Quantity, Price));
 				}
 			} catch (Exception e) {
-				e.printStackTrace();
+				LOGGER.debug(e.getStackTrace());
+				LOGGER.error(e.getMessage());
 			}
 			return PurchaseList;
 
