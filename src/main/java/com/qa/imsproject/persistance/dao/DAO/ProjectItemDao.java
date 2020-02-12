@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import org.apache.log4j.Logger;
 
 import com.qa.imsproject.persistance.dao.classes.ProjectItem;
+import com.qa.imsproject.utilities.Config;
 import com.qa.imsproject.utilities.ProjectUtils;
 
 public class ProjectItemDao implements ProjectDao<ProjectItem> {
@@ -18,8 +19,8 @@ public class ProjectItemDao implements ProjectDao<ProjectItem> {
 	private Connection connection;
 
 	public ProjectItemDao() throws SQLException {
-		this.connection = DriverManager.getConnection("jdbc:mysql://35.246.84.97:3306/projectdatabase", "root",
-				"nczoedpcw8pGm76J");
+		this.connection = DriverManager.getConnection("jdbc:mysql://35.246.84.97:3306/projectdatabase", Config.username,
+				Config.password);
 	}
 
 	public void create(ProjectItem t) {
