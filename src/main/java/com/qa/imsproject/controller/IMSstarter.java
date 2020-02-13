@@ -16,11 +16,11 @@ public class IMSstarter {
 
 	public void imsSystem() throws SQLException {
 		LOGGER.info("What is your username");
-		Config.username = ProjectUtils.scanner1.nextLine();
+		Config.setUsername(ProjectUtils.scanner1.nextLine());
 		LOGGER.info("What is your password");
-		Config.password = ProjectUtils.scanner2.nextLine();
+		Config.setPassword(ProjectUtils.scanner2.nextLine());
 
-		LOGGER.info("Welcome " + Config.username + " to Wozack's Starship IMS!");
+		LOGGER.info("Welcome " + Config.getUsername() + " to Wozack's Starship IMS!");
 
 		boolean cont = true;
 
@@ -48,7 +48,7 @@ public class IMSstarter {
 			break;
 			
 			case "EXIT":
-				LOGGER.info("Logging off " + Config.username + "... \r\n" + "Thank you for using Wozack's Starship IMS!");
+				LOGGER.info("Logging off " + Config.getUsername() + "... \r\n" + "Thank you for using Wozack's Starship IMS!");
 				cont = false;
 			break;
 
