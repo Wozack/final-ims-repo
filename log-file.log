@@ -320,3 +320,363 @@ PURCHASE
 EXIT
 2020-02-12 11:23:26 INFO  IMSstarter:50 - Logging off root... 
 Thank you for using Wozack's Starship IMS!
+2020-02-12 14:45:07 INFO  IMSstarter:18 - What is your username
+2020-02-12 14:45:14 INFO  IMSstarter:20 - What is your password
+2020-02-12 14:45:39 INFO  IMSstarter:23 - Welcome root to Wozack's Starship IMS!
+2020-02-12 14:45:39 INFO  IMSstarter:29 - This is the IMS menu, please refer to which sub-menu you wish to use. Type either: 
+CUSTOMER 
+ITEM 
+PURCHASE 
+EXIT
+2020-02-12 14:46:15 INFO  PurchaseSubMenu:20 - Initiating Purchase menu...
+2020-02-12 14:46:15 INFO  PurchaseSubMenu:26 - This is the Purchase menu, please refer to which command you wish to use. 
+NOTE: YOU MUST CREATE A PURCHASE ID BEFORE CREATING AN ORDER! 
+Type either: 
+CREATE ID 
+CREATE ORDER 
+READ ID 
+READ ORDER 
+UPDATE 
+DELETE 
+EXIT
+2020-02-12 14:46:35 INFO  ProjectOrderDao:132 - Returning array of purchases along with the total cost of the purchase, please find your appropriate purchase ID
+2020-02-12 14:46:35 INFO  PurchaseSubMenu:26 - This is the Purchase menu, please refer to which command you wish to use. 
+NOTE: YOU MUST CREATE A PURCHASE ID BEFORE CREATING AN ORDER! 
+Type either: 
+CREATE ID 
+CREATE ORDER 
+READ ID 
+READ ORDER 
+UPDATE 
+DELETE 
+EXIT
+2020-02-12 14:47:03 INFO  PurchaseSubMenu:73 - Exiting Item menu...
+2020-02-12 14:47:03 INFO  IMSstarter:29 - This is the IMS menu, please refer to which sub-menu you wish to use. Type either: 
+CUSTOMER 
+ITEM 
+PURCHASE 
+EXIT
+2020-02-12 14:47:12 INFO  IMSstarter:51 - Logging off root... 
+Thank you for using Wozack's Starship IMS!
+2020-02-12 14:48:35 INFO  IMSstarter:18 - What is your username
+2020-02-12 14:48:53 INFO  IMSstarter:18 - What is your username
+2020-02-12 14:49:02 INFO  IMSstarter:20 - What is your password
+2020-02-12 14:49:21 INFO  IMSstarter:23 - Welcome root to Wozack's Starship IMS!
+2020-02-12 14:49:21 INFO  IMSstarter:29 - This is the IMS menu, please refer to which sub-menu you wish to use. Type either: 
+CUSTOMER 
+ITEM 
+PURCHASE 
+EXIT
+2020-02-12 14:49:36 INFO  CustomerSubMenu:20 - Initiating Item menu...
+2020-02-12 14:49:36 INFO  CustomerSubMenu:26 - This is the Item menu, please refer to which command you wish to use. Type either: 
+CREATE 
+READ 
+UPDATE 
+DELETE 
+EXIT
+2020-02-12 14:49:40 INFO  CustomerSubMenu:26 - This is the Item menu, please refer to which command you wish to use. Type either: 
+CREATE 
+READ 
+UPDATE 
+DELETE 
+EXIT
+2020-02-12 14:49:47 INFO  CustomerSubMenu:57 - Exiting Item menu...
+2020-02-12 14:49:47 INFO  IMSstarter:29 - This is the IMS menu, please refer to which sub-menu you wish to use. Type either: 
+CUSTOMER 
+ITEM 
+PURCHASE 
+EXIT
+2020-02-12 14:49:53 INFO  CustomerSubMenu:20 - Initiating Customer menu...
+2020-02-12 14:49:53 INFO  CustomerSubMenu:26 - This is the Customer menu, please refer to which command you wish to use. Type either: 
+CREATE 
+READ 
+UPDATE 
+DELETE 
+EXIT
+2020-02-12 14:50:02 INFO  ProjectCustomerDao:42 - Returning array of all customers: 
+2020-02-12 14:50:02 INFO  CustomerSubMenu:26 - This is the Customer menu, please refer to which command you wish to use. Type either: 
+CREATE 
+READ 
+UPDATE 
+DELETE 
+EXIT
+2020-02-12 14:50:37 INFO  ProjectCustomerDao:60 - Updating customer name, please enter the customer's ID who's name is to be updated: 
+2020-02-12 14:50:40 INFO  ProjectCustomerDao:62 - What do you wish 1 to be known as: 
+2020-02-12 14:50:48 INFO  ProjectCustomerDao:67 - Customer updated...
+2020-02-12 14:50:48 INFO  CustomerSubMenu:26 - This is the Customer menu, please refer to which command you wish to use. Type either: 
+CREATE 
+READ 
+UPDATE 
+DELETE 
+EXIT
+2020-02-12 14:50:52 INFO  ProjectCustomerDao:42 - Returning array of all customers: 
+2020-02-12 14:50:52 INFO  CustomerSubMenu:26 - This is the Customer menu, please refer to which command you wish to use. Type either: 
+CREATE 
+READ 
+UPDATE 
+DELETE 
+EXIT
+2020-02-12 14:51:20 INFO  CustomerSubMenu:56 - Exiting Customer menu...
+2020-02-12 14:51:20 INFO  IMSstarter:29 - This is the IMS menu, please refer to which sub-menu you wish to use. Type either: 
+CUSTOMER 
+ITEM 
+PURCHASE 
+EXIT
+2020-02-12 14:51:23 INFO  IMSstarter:51 - Logging off root... 
+Thank you for using Wozack's Starship IMS!
+2020-02-12 15:11:25 INFO  IMSstarter:18 - What is your username
+2020-02-12 15:11:30 INFO  IMSstarter:20 - What is your password
+2020-02-12 15:12:14 INFO  IMSstarter:23 - Welcome root to Wozack's Starship IMS!
+2020-02-12 15:12:14 INFO  IMSstarter:29 - This is the IMS menu, please refer to which sub-menu you wish to use. Type either: 
+CUSTOMER 
+ITEM 
+PURCHASE 
+EXIT
+2020-02-12 15:12:20 INFO  CustomerSubMenu:20 - Initiating Customer menu...
+2020-02-12 15:12:20 INFO  CustomerSubMenu:26 - This is the Customer menu, please refer to which command you wish to use. Type either: 
+CREATE 
+READ 
+UPDATE 
+DELETE 
+EXIT
+2020-02-12 15:12:24 INFO  ProjectCustomerDao:27 - Creating new customer, please enter your customer name: 
+2020-02-12 15:12:45 INFO  ProjectCustomerDao:31 - Customer created...
+2020-02-12 15:12:45 INFO  CustomerSubMenu:26 - This is the Customer menu, please refer to which command you wish to use. Type either: 
+CREATE 
+READ 
+UPDATE 
+DELETE 
+EXIT
+2020-02-12 15:12:48 INFO  ProjectCustomerDao:42 - Returning array of all customers: 
+2020-02-12 15:12:48 INFO  CustomerSubMenu:26 - This is the Customer menu, please refer to which command you wish to use. Type either: 
+CREATE 
+READ 
+UPDATE 
+DELETE 
+EXIT
+2020-02-12 15:12:57 INFO  ProjectCustomerDao:60 - Updating customer name, please enter the customer's ID who's name is to be updated: 
+2020-02-12 15:13:05 INFO  ProjectCustomerDao:62 - What do you wish 1 to be known as: 
+2020-02-12 15:13:14 INFO  ProjectCustomerDao:67 - Customer updated...
+2020-02-12 15:13:14 INFO  CustomerSubMenu:26 - This is the Customer menu, please refer to which command you wish to use. Type either: 
+CREATE 
+READ 
+UPDATE 
+DELETE 
+EXIT
+2020-02-12 15:13:19 INFO  ProjectCustomerDao:77 - Deleting customer from database, please enter the customer's ID to be deleted: 
+2020-02-12 15:13:22 INFO  ProjectCustomerDao:81 - Customer deleted...
+2020-02-12 15:13:22 INFO  CustomerSubMenu:26 - This is the Customer menu, please refer to which command you wish to use. Type either: 
+CREATE 
+READ 
+UPDATE 
+DELETE 
+EXIT
+2020-02-12 15:13:22 INFO  CustomerSubMenu:26 - This is the Customer menu, please refer to which command you wish to use. Type either: 
+CREATE 
+READ 
+UPDATE 
+DELETE 
+EXIT
+2020-02-12 15:13:28 INFO  CustomerSubMenu:56 - Exiting Customer menu...
+2020-02-12 15:13:28 INFO  IMSstarter:29 - This is the IMS menu, please refer to which sub-menu you wish to use. Type either: 
+CUSTOMER 
+ITEM 
+PURCHASE 
+EXIT
+2020-02-12 15:13:33 INFO  CustomerSubMenu:20 - Initiating Item menu...
+2020-02-12 15:13:33 INFO  CustomerSubMenu:26 - This is the Item menu, please refer to which command you wish to use. Type either: 
+CREATE 
+READ 
+UPDATE 
+DELETE 
+EXIT
+2020-02-12 15:13:37 INFO  ProjectItemDao:29 - Creating new item, please enter item name: 
+2020-02-12 15:13:48 INFO  ProjectItemDao:31 - Enter item price: 
+2020-02-12 15:14:54 INFO  ProjectItemDao:36 - Item created...
+2020-02-12 15:14:54 INFO  CustomerSubMenu:26 - This is the Item menu, please refer to which command you wish to use. Type either: 
+CREATE 
+READ 
+UPDATE 
+DELETE 
+EXIT
+2020-02-12 15:15:03 INFO  CustomerSubMenu:26 - This is the Item menu, please refer to which command you wish to use. Type either: 
+CREATE 
+READ 
+UPDATE 
+DELETE 
+EXIT
+2020-02-12 15:15:41 INFO  ProjectItemDao:65 - Updating item price, please enter the item ID to be updated: 
+2020-02-12 15:15:45 INFO  ProjectItemDao:67 - What is the updated price of item ID 13: 
+2020-02-12 15:15:53 INFO  ProjectItemDao:71 - Item updated...
+2020-02-12 15:15:53 INFO  CustomerSubMenu:26 - This is the Item menu, please refer to which command you wish to use. Type either: 
+CREATE 
+READ 
+UPDATE 
+DELETE 
+EXIT
+2020-02-12 15:16:01 INFO  ProjectItemDao:81 - Deleting item from database, please enter the item ID to be deleted: 
+2020-02-12 15:16:09 INFO  ProjectItemDao:85 - Item deleted...
+2020-02-12 15:16:09 INFO  CustomerSubMenu:26 - This is the Item menu, please refer to which command you wish to use. Type either: 
+CREATE 
+READ 
+UPDATE 
+DELETE 
+EXIT
+2020-02-12 15:16:09 INFO  CustomerSubMenu:26 - This is the Item menu, please refer to which command you wish to use. Type either: 
+CREATE 
+READ 
+UPDATE 
+DELETE 
+EXIT
+2020-02-12 15:16:13 INFO  CustomerSubMenu:57 - Exiting Item menu...
+2020-02-12 15:16:13 INFO  IMSstarter:29 - This is the IMS menu, please refer to which sub-menu you wish to use. Type either: 
+CUSTOMER 
+ITEM 
+PURCHASE 
+EXIT
+2020-02-12 15:16:23 INFO  PurchaseSubMenu:20 - Initiating Purchase menu...
+2020-02-12 15:16:23 INFO  PurchaseSubMenu:26 - This is the Purchase menu, please refer to which command you wish to use. 
+NOTE: YOU MUST CREATE A PURCHASE ID BEFORE CREATING AN ORDER! 
+Type either: 
+CREATE ID 
+CREATE ORDER 
+READ ID 
+READ ORDER 
+UPDATE 
+DELETE 
+EXIT
+2020-02-12 15:16:49 INFO  ProjectOrderDao:29 - Creating new order - this requires you to create a new purchase ID, who is making the order? Please enter customer ID: 
+2020-02-12 15:17:16 INFO  ProjectOrderDao:34 - Purchase ID created...
+2020-02-12 15:17:16 INFO  PurchaseSubMenu:26 - This is the Purchase menu, please refer to which command you wish to use. 
+NOTE: YOU MUST CREATE A PURCHASE ID BEFORE CREATING AN ORDER! 
+Type either: 
+CREATE ID 
+CREATE ORDER 
+READ ID 
+READ ORDER 
+UPDATE 
+DELETE 
+EXIT
+2020-02-12 15:17:24 INFO  ProjectOrderDao:45 - To retrieve your Purchase ID, please enter your Customer ID
+2020-02-12 15:17:28 INFO  PurchaseSubMenu:26 - This is the Purchase menu, please refer to which command you wish to use. 
+NOTE: YOU MUST CREATE A PURCHASE ID BEFORE CREATING AN ORDER! 
+Type either: 
+CREATE ID 
+CREATE ORDER 
+READ ID 
+READ ORDER 
+UPDATE 
+DELETE 
+EXIT
+2020-02-12 15:17:50 INFO  ProjectOrderDao:112 - Creating new order, if you do not have a purchase ID for this transaction please create one. Please enter purchase ID: 
+2020-02-12 15:18:02 INFO  ProjectOrderDao:115 - Next please enter the item ID of the item you wish to purchase: 
+2020-02-12 15:18:08 INFO  ProjectOrderDao:117 - Finally enter in the quantity of the item you wish to purchase: 
+2020-02-12 15:18:13 INFO  ProjectOrderDao:122 - Order Created...
+2020-02-12 15:18:13 INFO  PurchaseSubMenu:26 - This is the Purchase menu, please refer to which command you wish to use. 
+NOTE: YOU MUST CREATE A PURCHASE ID BEFORE CREATING AN ORDER! 
+Type either: 
+CREATE ID 
+CREATE ORDER 
+READ ID 
+READ ORDER 
+UPDATE 
+DELETE 
+EXIT
+2020-02-12 15:18:25 INFO  ProjectOrderDao:66 - Updating a created order, please enter the purchase ID of the order to be updated: 
+2020-02-12 15:18:28 INFO  ProjectOrderDao:68 - Now enter which aspect of the purchase you wish to change, enter either ITEM or QUANTITY: 
+2020-02-12 15:18:37 INFO  ProjectOrderDao:80 - Finally enter in the new quantity of the item you wish to purchase: 
+2020-02-12 15:18:47 INFO  ProjectOrderDao:86 - Order updated...
+2020-02-12 15:18:47 INFO  PurchaseSubMenu:26 - This is the Purchase menu, please refer to which command you wish to use. 
+NOTE: YOU MUST CREATE A PURCHASE ID BEFORE CREATING AN ORDER! 
+Type either: 
+CREATE ID 
+CREATE ORDER 
+READ ID 
+READ ORDER 
+UPDATE 
+DELETE 
+EXIT
+2020-02-12 15:18:51 INFO  ProjectOrderDao:66 - Updating a created order, please enter the purchase ID of the order to be updated: 
+2020-02-12 15:18:54 INFO  ProjectOrderDao:68 - Now enter which aspect of the purchase you wish to change, enter either ITEM or QUANTITY: 
+2020-02-12 15:19:00 INFO  ProjectOrderDao:73 - Finally enter in the new item ID of the item you wish to purchase: 
+2020-02-12 15:19:13 INFO  ProjectOrderDao:86 - Order updated...
+2020-02-12 15:19:13 INFO  PurchaseSubMenu:26 - This is the Purchase menu, please refer to which command you wish to use. 
+NOTE: YOU MUST CREATE A PURCHASE ID BEFORE CREATING AN ORDER! 
+Type either: 
+CREATE ID 
+CREATE ORDER 
+READ ID 
+READ ORDER 
+UPDATE 
+DELETE 
+EXIT
+2020-02-12 15:19:21 INFO  ProjectOrderDao:132 - Returning array of purchases along with the total cost of the purchase, please find your appropriate purchase ID
+2020-02-12 15:19:21 INFO  PurchaseSubMenu:26 - This is the Purchase menu, please refer to which command you wish to use. 
+NOTE: YOU MUST CREATE A PURCHASE ID BEFORE CREATING AN ORDER! 
+Type either: 
+CREATE ID 
+CREATE ORDER 
+READ ID 
+READ ORDER 
+UPDATE 
+DELETE 
+EXIT
+2020-02-12 15:19:48 INFO  ProjectOrderDao:98 - Deleting order from database, please enter the purchase ID of the order to be deleted: 
+2020-02-12 15:19:56 INFO  ProjectOrderDao:102 - Order deleted...
+2020-02-12 15:19:56 INFO  PurchaseSubMenu:26 - This is the Purchase menu, please refer to which command you wish to use. 
+NOTE: YOU MUST CREATE A PURCHASE ID BEFORE CREATING AN ORDER! 
+Type either: 
+CREATE ID 
+CREATE ORDER 
+READ ID 
+READ ORDER 
+UPDATE 
+DELETE 
+EXIT
+2020-02-12 15:19:56 INFO  PurchaseSubMenu:26 - This is the Purchase menu, please refer to which command you wish to use. 
+NOTE: YOU MUST CREATE A PURCHASE ID BEFORE CREATING AN ORDER! 
+Type either: 
+CREATE ID 
+CREATE ORDER 
+READ ID 
+READ ORDER 
+UPDATE 
+DELETE 
+EXIT
+2020-02-12 15:20:06 INFO  PurchaseSubMenu:73 - Exiting Purchase menu...
+2020-02-12 15:20:06 INFO  IMSstarter:29 - This is the IMS menu, please refer to which sub-menu you wish to use. Type either: 
+CUSTOMER 
+ITEM 
+PURCHASE 
+EXIT
+2020-02-12 15:20:17 INFO  IMSstarter:51 - Logging off root... 
+Thank you for using Wozack's Starship IMS!
+2020-02-12 16:31:33 INFO  IMSstarter:18 - What is your username
+2020-02-12 16:31:38 INFO  IMSstarter:20 - What is your password
+2020-02-12 16:31:56 INFO  IMSstarter:23 - Welcome root to Wozack's Starship IMS!
+2020-02-12 16:31:56 INFO  IMSstarter:29 - This is the IMS menu, please refer to which sub-menu you wish to use. Type either: 
+CUSTOMER 
+ITEM 
+PURCHASE 
+EXIT
+2020-02-12 16:32:00 INFO  CustomerSubMenu:20 - Initiating Customer menu...
+2020-02-12 16:32:00 INFO  CustomerSubMenu:26 - This is the Customer menu, please refer to which command you wish to use. Type either: 
+CREATE 
+READ 
+UPDATE 
+DELETE 
+EXIT
+2020-02-12 16:51:09 INFO  IMSstarter:18 - What is your username
+2020-02-12 16:51:13 INFO  IMSstarter:20 - What is your password
+2020-02-12 16:55:24 INFO  IMSstarter:18 - What is your username
+2020-02-12 16:55:30 INFO  IMSstarter:18 - What is your username
+2020-02-12 16:55:35 INFO  IMSstarter:18 - What is your username
+2020-02-12 16:55:36 INFO  IMSstarter:18 - What is your username
+2020-02-12 16:55:36 INFO  IMSstarter:18 - What is your username
+2020-02-12 16:55:37 INFO  IMSstarter:18 - What is your username
+2020-02-12 16:55:38 INFO  IMSstarter:18 - What is your username
+2020-02-12 16:55:39 INFO  IMSstarter:18 - What is your username
+2020-02-12 16:55:39 INFO  IMSstarter:18 - What is your username
+2020-02-12 16:55:40 INFO  IMSstarter:18 - What is your username
+2020-02-12 16:55:40 INFO  IMSstarter:18 - What is your username
+2020-02-13 09:12:25 INFO  IMSstarter:18 - What is your username
