@@ -651,3 +651,32 @@ PURCHASE
 EXIT
 2020-02-12 15:20:17 INFO  IMSstarter:51 - Logging off root... 
 Thank you for using Wozack's Starship IMS!
+2020-02-12 16:31:33 INFO  IMSstarter:18 - What is your username
+2020-02-12 16:31:38 INFO  IMSstarter:20 - What is your password
+2020-02-12 16:31:56 INFO  IMSstarter:23 - Welcome root to Wozack's Starship IMS!
+2020-02-12 16:31:56 INFO  IMSstarter:29 - This is the IMS menu, please refer to which sub-menu you wish to use. Type either: 
+CUSTOMER 
+ITEM 
+PURCHASE 
+EXIT
+2020-02-12 16:32:00 INFO  CustomerSubMenu:20 - Initiating Customer menu...
+2020-02-12 16:32:00 INFO  CustomerSubMenu:26 - This is the Customer menu, please refer to which command you wish to use. Type either: 
+CREATE 
+READ 
+UPDATE 
+DELETE 
+EXIT
+2020-02-12 16:51:09 INFO  IMSstarter:18 - What is your username
+2020-02-12 16:51:13 INFO  IMSstarter:20 - What is your password
+2020-02-12 16:55:24 INFO  IMSstarter:18 - What is your username
+2020-02-12 16:55:30 INFO  IMSstarter:18 - What is your username
+2020-02-12 16:55:35 INFO  IMSstarter:18 - What is your username
+2020-02-12 16:55:36 INFO  IMSstarter:18 - What is your username
+2020-02-12 16:55:36 INFO  IMSstarter:18 - What is your username
+2020-02-12 16:55:37 INFO  IMSstarter:18 - What is your username
+2020-02-12 16:55:38 INFO  IMSstarter:18 - What is your username
+2020-02-12 16:55:39 INFO  IMSstarter:18 - What is your username
+2020-02-12 16:55:39 INFO  IMSstarter:18 - What is your username
+2020-02-12 16:55:40 INFO  IMSstarter:18 - What is your username
+2020-02-12 16:55:40 INFO  IMSstarter:18 - What is your username
+2020-02-13 09:12:25 INFO  IMSstarter:18 - What is your username
