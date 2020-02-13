@@ -15,8 +15,7 @@ public class ItemSubMenu implements ServicesInterface {
 
 	@Override
 	public void serviceInterfaceMenu() throws SQLException {
-		// TODO Auto-generated method stub
-
+	
 		LOGGER.info("Initiating Item menu...");
 
 		boolean cont = true;

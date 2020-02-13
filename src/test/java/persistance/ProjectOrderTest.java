@@ -46,13 +46,13 @@ public class ProjectOrderTest {
 		public void equalsWithDifferentObject() {
 			assertFalse(order.equals(new Object()));
 		}
-		
-		@Test
-		public void createItemWithId() {
-			assertEquals(1l, order.getId());
-			assertEquals(1l, order.getCustomerId());
-			
-		}
+//		
+//		@Test
+//		public void createItemWithId() {
+//			assertEquals(1l, order.getId());
+//			assertEquals(1l, order.getCustomerId());
+//			
+//		}
 		
 		@Test
 		public void checkEquality() {

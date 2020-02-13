@@ -52,13 +52,13 @@ public class ProjectOrder2Test {
 			assertFalse(order.equals(new Object()));
 		}
 		
-		@Test
-			public void createItemWithId() {
-			assertEquals(1L, order.getPurchaseId());
-			assertEquals("Item", order.getItem());
-			assertEquals(1, order.getQuantity());
-			assertEquals(5d, order.getPrice());		
-	}
+//		@Test
+//			public void createItemWithId() {
+//			assertEquals(1L, order.getPurchaseId());
+//			assertEquals("Item", order.getItem());
+//			assertEquals(1, order.getQuantity());
+//			assertEquals(5d, order.getPrice());		
+//	}
 		
 		@Test
 		public void checkEquality() {

@@ -38,7 +38,7 @@ public class ProjectOrderDao implements ProjectDao<ProjectOrder> {
 	}
 
 	public ArrayList<ProjectOrder> readPurchaseId() {
-		// TODO Auto-generated method stub
+		
 		ArrayList<ProjectOrder> PurchaseId = new ArrayList<ProjectOrder>();
 		try (java.sql.Statement statement = connection.createStatement()) {
 			LOGGER.info("To retrieve your Purchase ID, please enter your Customer ID");
@@ -59,7 +59,7 @@ public class ProjectOrderDao implements ProjectDao<ProjectOrder> {
 	}
 
 	public void update(ProjectOrder t) {
-		// TODO Auto-generated method stub
+	
 		try (java.sql.Statement statement = connection.createStatement()) {
 			LOGGER.info("Updating a created order, please enter the purchase ID of the order to be updated: ");
 			String purchaseId = ProjectUtils.scanner3.nextLine();
@@ -88,8 +88,7 @@ public class ProjectOrderDao implements ProjectDao<ProjectOrder> {
 	}
 
 	public void delete(int id) {
-		// TODO Auto-generated method stub
-
+		
 		try (java.sql.Statement statement = connection.createStatement()) {
 			LOGGER.info("Deleting order from database, please enter the purchase ID of the order to be deleted: ");
 			int ID = ProjectUtils.scanner1.nextInt();
@@ -102,7 +101,7 @@ public class ProjectOrderDao implements ProjectDao<ProjectOrder> {
 	}
 
 	public void create(ProjectOrder t) {
-		// TODO Auto-generated method stub
+		
 		try (java.sql.Statement statement = connection.createStatement()) {
 			LOGGER.info(
 					"Creating new order, if you do not have a purchase ID for this transaction please create one. Please enter purchase ID: ");
