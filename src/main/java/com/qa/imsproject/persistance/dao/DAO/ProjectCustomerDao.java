@@ -35,7 +35,7 @@ public class ProjectCustomerDao implements ProjectDao<ProjectCustomer> {
 	}
 
 	public ArrayList<ProjectCustomer> readAll() {
-		// TODO Auto-generated method stub
+		
 		ArrayList<ProjectCustomer> customers = new ArrayList<>();
 		try (java.sql.Statement statement = connection.createStatement()) {
 			LOGGER.info("Returning array of all customers: ");
@@ -54,7 +54,7 @@ public class ProjectCustomerDao implements ProjectDao<ProjectCustomer> {
 	}
 
 	public void update(ProjectCustomer t) {
-		// TODO Auto-generated method stub
+		
 		try (java.sql.Statement statement = connection.createStatement()) {
 			LOGGER.info("Updating customer name, please enter the customer's ID who's name is to be updated: ");
 			String oldName = ProjectUtils.scanner2.nextLine();
@@ -70,7 +70,7 @@ public class ProjectCustomerDao implements ProjectDao<ProjectCustomer> {
 	}
 
 	public void delete(int id) {
-		// TODO Auto-generated method stub
+		
 		try (java.sql.Statement statement = connection.createStatement()) {
 			LOGGER.info("Deleting customer from database, please enter the customer's ID to be deleted: ");
 			int ID = ProjectUtils.scanner1.nextInt();

@@ -24,7 +24,7 @@ public class ProjectItemDao implements ProjectDao<ProjectItem> {
 	}
 
 	public void create(ProjectItem t) {
-		// TODO Auto-generated method stub
+
 		try(java.sql.Statement statement = connection.createStatement()) {
 			LOGGER.info("Creating new item, please enter item name: ");
 			String itemName = ProjectUtils.scanner1.nextLine();
@@ -40,7 +40,7 @@ public class ProjectItemDao implements ProjectDao<ProjectItem> {
 	}
 
 	public ArrayList<ProjectItem> readAll() {
-		// TODO Auto-generated method stub
+		
 		ArrayList<ProjectItem> items = new ArrayList<ProjectItem>();
 		try(java.sql.Statement statement = connection.createStatement()) {
 			ResultSet resultSet = statement.executeQuery("select * from item");
@@ -58,7 +58,7 @@ public class ProjectItemDao implements ProjectDao<ProjectItem> {
 	}
 
 	public void update(ProjectItem t) {
-		// TODO Auto-generated method stub
+
 		try(java.sql.Statement statement = connection.createStatement()) {
 			LOGGER.info("Updating item price, please enter the item ID to be updated: ");
 			String itemId = ProjectUtils.scanner2.nextLine();
@@ -73,7 +73,7 @@ public class ProjectItemDao implements ProjectDao<ProjectItem> {
 	}
 
 	public void delete(int id) {
-		// TODO Auto-generated method stub
+		
 		try(java.sql.Statement statement = connection.createStatement()) {
 			LOGGER.info("Deleting item from database, please enter the item ID to be deleted: ");
 			int ID = ProjectUtils.scanner1.nextInt();

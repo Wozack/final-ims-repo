@@ -15,7 +15,7 @@ public class CustomerSubMenu implements ServicesInterface {
 
 	@Override
 	public void serviceInterfaceMenu() throws SQLException {
-		// TODO Auto-generated method stub
+		
 
 		LOGGER.info("Initiating Customer menu...");
 
