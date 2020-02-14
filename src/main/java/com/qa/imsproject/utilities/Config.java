@@ -1,5 +1,9 @@
 package com.qa.imsproject.utilities;
-
+/**
+ * Getters and setters for the Username and Password.
+ * @author Admin
+ *
+ */
 public class Config {
 
 	private static String username;

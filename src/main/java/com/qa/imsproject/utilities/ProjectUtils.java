@@ -1,7 +1,11 @@
 package com.qa.imsproject.utilities;
 
 import java.util.Scanner;
-
+/**
+ * Holds scanners used throughout the IMS
+ * @author Admin
+ *
+ */
 public class ProjectUtils {
 
 		

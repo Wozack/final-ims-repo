@@ -8,11 +8,18 @@ import org.apache.log4j.Logger;
 import com.qa.imsproject.persistance.dao.DAO.ProjectOrderDao;
 import com.qa.imsproject.persistance.dao.classes.ProjectOrder;
 import com.qa.imsproject.utilities.ProjectUtils;
-
+/**
+ * PurchaseSubMenu, holds the service method.
+ * @author Admin
+ *
+ */
 public class PurchaseSubMenu implements ServicesInterface {
 
 	public static final Logger LOGGER = Logger.getLogger(PurchaseSubMenu.class);
 
+	/**
+	 * Switch based service menu that communicates with the ProjectOrderDao.
+	 */
 	@Override
 	public void serviceInterfaceMenu() throws SQLException {
 

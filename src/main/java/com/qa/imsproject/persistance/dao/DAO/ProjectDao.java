@@ -1,5 +1,7 @@
 package com.qa.imsproject.persistance.dao.DAO;
-
+/**
+ * Dao interface to be implemented by the other DAOs
+ */
 import java.util.ArrayList;
 
 public interface ProjectDao <T> {
