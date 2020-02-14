@@ -1,6 +1,7 @@
 package com.qa.imsproject.persistance.dao.DAO;
 
 import java.sql.Connection;
+
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -12,17 +13,27 @@ import com.qa.imsproject.persistance.dao.classes.ProjectOrder;
 import com.qa.imsproject.utilities.Config;
 import com.qa.imsproject.utilities.ProjectUtils;
 
+/**
+ * This is the ProjectOrderDao class, this holds the methods that communicate with the remote database.
+ * @author Admin
+ *
+ */
 public class ProjectOrderDao implements ProjectDao<ProjectOrder> {
 
 	public static final Logger LOGGER = Logger.getLogger(ProjectOrderDao.class);
 
 	private Connection connection;
-
+/**
+ * Establishes a connection with the database, takes in the username and password to do so.
+ * 
+ */
 	public ProjectOrderDao() throws SQLException {
-		this.connection = DriverManager.getConnection("jdbc:mysql://35.246.84.97:3306/projectdatabase", Config.getUsername(),
-				Config.getPassword());
+		this.connection = DriverManager.getConnection("jdbc:mysql://35.246.84.97:3306/projectdatabase",
+				Config.getUsername(), Config.getPassword());
 	}
-
+	/**
+	 * Creates a Purchase in the purchases table.
+	 */
 	public void createPurchaseId(ProjectOrder t) throws SQLException {
 		// TODO Auto-generated method stub
 		try (java.sql.Statement statement = connection.createStatement()) {
@@ -37,8 +48,12 @@ public class ProjectOrderDao implements ProjectDao<ProjectOrder> {
 		}
 	}
 
+	/**
+	 * Allows you to read the purchase id by customer id 
+	 * 
+	 */
 	public ArrayList<ProjectOrder> readPurchaseId() {
-		
+
 		ArrayList<ProjectOrder> PurchaseId = new ArrayList<ProjectOrder>();
 		try (java.sql.Statement statement = connection.createStatement()) {
 			LOGGER.info("To retrieve your Purchase ID, please enter your Customer ID");
@@ -57,9 +72,11 @@ public class ProjectOrderDao implements ProjectDao<ProjectOrder> {
 
 		return PurchaseId;
 	}
-
+/**
+ * Allows user to update an order in the line table
+ */
 	public void update(ProjectOrder t) {
-	
+
 		try (java.sql.Statement statement = connection.createStatement()) {
 			LOGGER.info("Updating a created order, please enter the purchase ID of the order to be updated: ");
 			String purchaseId = ProjectUtils.scanner3.nextLine();
@@ -86,9 +103,11 @@ public class ProjectOrderDao implements ProjectDao<ProjectOrder> {
 		}
 
 	}
-
+/**
+ * allows a user to delete an order in the line table
+ */
 	public void delete(int id) {
-		
+
 		try (java.sql.Statement statement = connection.createStatement()) {
 			LOGGER.info("Deleting order from database, please enter the purchase ID of the order to be deleted: ");
 			int ID = ProjectUtils.scanner1.nextInt();
@@ -99,9 +118,11 @@ public class ProjectOrderDao implements ProjectDao<ProjectOrder> {
 			LOGGER.error(e.getMessage());
 		}
 	}
-
+/**
+ * allows a user to create a purchase in the line table using purchase id
+ */
 	public void create(ProjectOrder t) {
-		
+
 		try (java.sql.Statement statement = connection.createStatement()) {
 			LOGGER.info(
 					"Creating new order, if you do not have a purchase ID for this transaction please create one. Please enter purchase ID: ");
@@ -118,7 +139,9 @@ public class ProjectOrderDao implements ProjectDao<ProjectOrder> {
 			LOGGER.error(e.getMessage());
 		}
 	}
-
+/**
+ * allows user to read all purchases as a join table, also give total cost of the order
+ */
 	public ArrayList<ProjectOrder> readAll() {
 		ArrayList<ProjectOrder> PurchaseList = new ArrayList<ProjectOrder>();
 		try (java.sql.Statement statement = connection.createStatement()) {
@@ -139,7 +162,5 @@ public class ProjectOrderDao implements ProjectDao<ProjectOrder> {
 			LOGGER.error(e.getMessage());
 		}
 		return PurchaseList;
-
 	}
-
 }

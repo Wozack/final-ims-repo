@@ -11,17 +11,31 @@ import com.qa.imsproject.persistance.dao.classes.ProjectCustomer;
 import com.qa.imsproject.utilities.Config;
 import com.qa.imsproject.utilities.ProjectUtils;
 
+/**
+ * This is the ProjectCustomerDao class, this holds the methods that communicate with the remote database.
+ * @author Admin
+ *
+ */
 public class ProjectCustomerDao implements ProjectDao<ProjectCustomer> {
 
 	public static final Logger LOGGER = Logger.getLogger(ProjectCustomerDao.class);
 
 	private Connection connection;
 
+	
+	/**
+	 * Establishes a connection with the database, takes in the username and password to do so.
+	 * 
+	 */
+	
 	public ProjectCustomerDao() throws SQLException {
 		this.connection = DriverManager.getConnection("jdbc:mysql://35.246.84.97:3306/projectdatabase", Config.getUsername(),
 				Config.getPassword());
 	}
 
+	/**
+	 * Creates a customer in the database.
+	 */
 	public void create(ProjectCustomer customer) {
 		try (java.sql.Statement statement = connection.createStatement()) {
 			LOGGER.info("Creating new customer, please enter your customer name: ");
@@ -34,6 +48,9 @@ public class ProjectCustomerDao implements ProjectDao<ProjectCustomer> {
 		}
 	}
 
+	/**
+	 * Lets the user read all customers in the database in an array
+	 */
 	public ArrayList<ProjectCustomer> readAll() {
 		
 		ArrayList<ProjectCustomer> customers = new ArrayList<>();
@@ -52,7 +69,9 @@ public class ProjectCustomerDao implements ProjectDao<ProjectCustomer> {
 		}
 		return customers;
 	}
-
+/**
+ * Lets the user update a customer's name 
+ */
 	public void update(ProjectCustomer t) {
 		
 		try (java.sql.Statement statement = connection.createStatement()) {
@@ -69,6 +88,9 @@ public class ProjectCustomerDao implements ProjectDao<ProjectCustomer> {
 		}
 	}
 
+	/**
+	 * lets the user delete a customer
+	 */
 	public void delete(int id) {
 		
 		try (java.sql.Statement statement = connection.createStatement()) {

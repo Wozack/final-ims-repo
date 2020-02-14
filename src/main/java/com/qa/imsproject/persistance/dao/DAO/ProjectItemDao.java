@@ -12,17 +12,29 @@ import com.qa.imsproject.persistance.dao.classes.ProjectItem;
 import com.qa.imsproject.utilities.Config;
 import com.qa.imsproject.utilities.ProjectUtils;
 
+/**
+ * This is the ProjectItemDao class, this holds the methods that communicate with the remote database.
+ * @author Admin
+ *
+ */
 public class ProjectItemDao implements ProjectDao<ProjectItem> {
 
 	public static final Logger LOGGER = Logger.getLogger(ProjectItemDao.class);
 	
 	private Connection connection;
-
+	
+	/**
+	 * Establishes a connection with the database, takes in the username and password to do so.
+	 * 
+	 */
 	public ProjectItemDao() throws SQLException {
 		this.connection = DriverManager.getConnection("jdbc:mysql://35.246.84.97:3306/projectdatabase", Config.getUsername(),
 				Config.getPassword());
 	}
 
+	/**
+	 * Creates an item 
+	 */
 	public void create(ProjectItem t) {
 
 		try(java.sql.Statement statement = connection.createStatement()) {
@@ -38,7 +50,9 @@ public class ProjectItemDao implements ProjectDao<ProjectItem> {
 			LOGGER.error(e.getMessage());
 		}
 	}
-
+/**
+ * lets user read all items in an array
+ */
 	public ArrayList<ProjectItem> readAll() {
 		
 		ArrayList<ProjectItem> items = new ArrayList<ProjectItem>();
@@ -56,7 +70,9 @@ public class ProjectItemDao implements ProjectDao<ProjectItem> {
 		}
 		return items;
 	}
-
+/**
+ * lets user update the price of an item
+ */
 	public void update(ProjectItem t) {
 
 		try(java.sql.Statement statement = connection.createStatement()) {
@@ -71,7 +87,9 @@ public class ProjectItemDao implements ProjectDao<ProjectItem> {
 			LOGGER.error(e.getMessage());
 		}
 	}
-
+/**
+ * lets user delete an item
+ */
 	public void delete(int id) {
 		
 		try(java.sql.Statement statement = connection.createStatement()) {
