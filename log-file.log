@@ -680,3 +680,33 @@ EXIT
 2020-02-12 16:55:40 INFO  IMSstarter:18 - What is your username
 2020-02-12 16:55:40 INFO  IMSstarter:18 - What is your username
 2020-02-13 09:12:25 INFO  IMSstarter:18 - What is your username
+2020-02-14 09:04:13 INFO  IMSstarter:26 - What is your username
+2020-02-14 09:04:21 INFO  IMSstarter:28 - What is your password
+2020-02-14 09:04:43 INFO  IMSstarter:31 - Welcome root to Wozack's Starship IMS!
+2020-02-14 09:04:43 INFO  IMSstarter:37 - This is the IMS menu, please refer to which sub-menu you wish to use. Type either: 
+CUSTOMER 
+ITEM 
+PURCHASE 
+EXIT
+2020-02-14 09:04:52 INFO  PurchaseSubMenu:27 - Initiating Purchase menu...
+2020-02-14 09:04:52 INFO  PurchaseSubMenu:33 - This is the Purchase menu, please refer to which command you wish to use. 
+NOTE: YOU MUST CREATE A PURCHASE ID BEFORE CREATING AN ORDER! 
+Type either: 
+CREATE ID 
+CREATE ORDER 
+READ ID 
+READ ORDER 
+UPDATE 
+DELETE 
+EXIT
+2020-02-14 09:05:01 INFO  ProjectOrderDao:148 - Returning array of purchases along with the total cost of the purchase, please find your appropriate purchase ID
+2020-02-14 09:05:01 INFO  PurchaseSubMenu:33 - This is the Purchase menu, please refer to which command you wish to use. 
+NOTE: YOU MUST CREATE A PURCHASE ID BEFORE CREATING AN ORDER! 
+Type either: 
+CREATE ID 
+CREATE ORDER 
+READ ID 
+READ ORDER 
+UPDATE 
+DELETE 
+EXIT

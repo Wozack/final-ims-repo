@@ -9,11 +9,19 @@ import com.qa.imsproject.services.ItemSubMenu;
 import com.qa.imsproject.services.PurchaseSubMenu;
 import com.qa.imsproject.utilities.Config;
 import com.qa.imsproject.utilities.ProjectUtils;
-
+/**
+ * IMSstarter Class, holds the initial menu.
+ * @author Admin
+ *
+ */
 public class IMSstarter {
 
 	public static final Logger LOGGER = Logger.getLogger(IMSstarter.class);
 
+	/**
+	 * Method takes in username and password required to access the database. Holds a switch menu that communicates with services.
+	 * 
+	 */
 	public void imsSystem() throws SQLException {
 		LOGGER.info("What is your username");
 		Config.setUsername(ProjectUtils.scanner1.nextLine());

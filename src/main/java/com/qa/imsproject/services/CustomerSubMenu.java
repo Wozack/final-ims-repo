@@ -8,11 +8,17 @@ import org.apache.log4j.Logger;
 import com.qa.imsproject.persistance.dao.DAO.ProjectCustomerDao;
 import com.qa.imsproject.persistance.dao.classes.ProjectCustomer;
 import com.qa.imsproject.utilities.ProjectUtils;
-
+/**
+ * Holds the Customer service menu
+ * @author Admin
+ *
+ */
 public class CustomerSubMenu implements ServicesInterface {
 
 	public static final Logger LOGGER = Logger.getLogger(CustomerSubMenu.class);
-
+/**
+ * Switch based service menu that communicates with the ProjectCustomerDao.
+ */
 	@Override
 	public void serviceInterfaceMenu() throws SQLException {
 		

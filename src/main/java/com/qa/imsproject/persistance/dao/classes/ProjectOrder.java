@@ -1,5 +1,9 @@
 package com.qa.imsproject.persistance.dao.classes;
-
+/**
+ * ProjectOrder class with getters and setters to be used by the methods in the DAOs
+ * @author Admin
+ *
+ */
 public class ProjectOrder {
 	
 	private Long id;
